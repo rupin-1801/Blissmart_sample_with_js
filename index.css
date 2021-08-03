@@ -6,3 +6,47 @@
 .root{
     display: flex;
 }
+.nav-icon{
+    width: 50px;
+    height: 50px;
+}
+.search-icon{
+    width: 40px;
+    height: 40px;
+}
+.search-helper-button{
+    width: 35px;
+    height: 35px;
+}
+.cart-button{
+    width: 45px;
+    height: 45px;
+}
+.ctrgy-img{
+    width: 60px;
+    height: 60px;
+}
+.banner-image{
+    width: 100vw;
+    height: 300px;
+}
+.arrow{
+    width: 100px;
+    height: 100px;
+}
+.product-image{
+    height: 160px;
+    width: auto;
+}
+.more-arrow{
+    width: 50px;
+    height: 50px;
+}
+.star{
+    width: 30px;
+    height: 30px;
+}
+.pager-arrow{
+    width: 40px;
+    height: 40px;
+}
