@@ -9,8 +9,12 @@
 <body>
     <div class="root">
         <div class="menu-bar">
-            <div><img class="nav-icon"src="./images/icons/nav-icon.png" alt="nav-icon"></ndiv>
-            <h2>Blissmart</h2>
+            <div class="menu-left">
+                <div class="nav-icon-box">
+                    <img class="nav-icon"src="./images/icons/nav-icon.png" alt="nav-icon">
+                </div>
+                <h2>Blissmart</h2>
+            </div>
             <div class="search-bar">
                 <img class="search-icon" src="./images/icons/search.png" alt="search icon"/>
                 <form class="search-box">
@@ -23,10 +27,10 @@
                     <img class="search-helper-button" src="./images/icons/location.png" alt="location"/>
                 </div>
             </div>
-            <div>
+            <div class="menu-right">
                 <img class="cart-button" src="./images/icons/cart.png" alt="cart"/>
+                <h3 class="login-button">Login</h3>
             </div>
-            <h3 class="login-button">Login</h3>
         </div>
         <div class="category-bar">
             <ul class="category-list">
@@ -129,22 +133,23 @@
             </ul>
         </div>
         <div class="carousel">
-            <div class="left-arrow-box">
-                <img class="arrow" src="./images/icons/left.png" alt="left-arrow"/>
+            <div class="arrows">
+                <div class="left-arrow-box">
+                    <img class="arrow" src="./images/icons/left.png" alt="left-arrow"/>
+                </div>
+                <div class="right-arrow-box">
+                    <img class="arrow" src="./images/icons/right.png" alt="left-arrow"/>
+                </div>
             </div>
             <img class="banner-image" src="./images/extra/banner-1.jpg" alt="image-1"/>
-            <img class="banner-image" src="./images/extra/banner-2.png" alt="image-2"/>
-            <img class="banner-image" src="./images/extra/banner-3.jpg" alt="image-3"/>
-            <div class="right-arrow-box">
-                <img class="arrow" src="./images/icons/right.png" alt="left-arrow"/>
-            </div>
+            
         </div>
         <div class="products-section">
             <div class="products">
-                <h2 class="product-heading">
-                    Trending Products
-                </h2>
-                <div class="more-arrow">
+                <div class="products-header">
+                    <h2 class="product-heading">
+                        Trending Products
+                    </h2>
                     <img class="more-arrow" src="./images/icons/right.png"/>
                 </div>
                 <ul class="product-list">
@@ -259,10 +264,10 @@
                 </ul>
             </div>
             <div class="products">
-                <h2 class="product-heading">
-                    Explore nearby stores
-                </h2>
-                <div class="more-arrow">
+                <div class="products-header">
+                    <h2 class="product-heading">
+                        Explore nearby stores
+                    </h2>
                     <img class="more-arrow" src="./images/icons/right.png"/>
                 </div>
                 <ul class="product-list">
@@ -378,7 +383,7 @@
             </div>
         </div>
         <div class="pager">
-            <div class="left-arrow-box pager">
+            <div class="arrow-box pager">
                 <img class="pager-arrow" src="./images/icons/left.png" alt="left-arrow"/>
                 <p class="text">Previous</p>
             </div>
@@ -401,31 +406,31 @@
                     </li>
                 </ul>
             </div>
-            <div class="right-arrow-box pager">
+            <div class="arrow-box pager">
                 <p class="text">Next</p>
                 <img class="pager-arrow" src="./images/icons/right.png" alt="right-arrow"/>
             </div>
         </div>
         <div class="footer">
-            <div class="options">
-                <ul class="options-list">
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Orders
-                    </li>
-                    <li>
-                        Change password
-                    </li>
-                    <li>
-                        Order History
-                    </li>
-                    <li>
-                        Logout
-                    </li>
-                </ul>
-            </div>
+            <ul class="options-list">
+                <li>
+                    About
+                </li>
+                <li>
+                    Contact Us
+                </li>
+                <li>
+                    Order History
+                </li>
+            </ul>
+            <ul class="options-list">
+                <li>
+                    Change password
+                </li>
+                <li>
+                    Logout
+                </li>
+            </ul>
             <div class="logo">
                 <h1>Bm</h1>
                 <h3>Blissmart</h3>
