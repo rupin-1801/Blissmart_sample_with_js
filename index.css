@@ -74,6 +74,24 @@ input{
     width: 35px;
     height: 35px;
 }
+.cart-image{
+    width: 35px;
+    height: 35px;
+}
+.cart-button::after{
+    position: relative;
+    top:-30px;
+    right:-23px;
+    font-size: 10px;
+    content: '2';
+    padding: 2px 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    z-index: +2;
+}
 .login-button{
     margin: 0px 30px;
 }
