@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    transition: all 0.5s;
 }
 
 h2{
@@ -188,9 +189,16 @@ input{
     width: 100vw;
     height: 250px;
 }
+.right-arrow-box, .left-arrow-box{
+    height:250px;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+}
 .arrow{
     width: 100px;
     height: 100px;
+    cursor:pointer;
 }
 
 /* products styles */
