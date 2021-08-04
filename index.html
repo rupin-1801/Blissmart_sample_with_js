@@ -17,7 +17,7 @@
             </div>
             <div class="search-bar">
                 <img class="search-icon" src="./images/icons/search.png" alt="search icon"/>
-                <form class="search-box">
+                <form action="/" class="search-box">
                     <input type="text" placeholder="Search items here">
                 </form>
                 <div>
@@ -28,8 +28,22 @@
                 </div>
             </div>
             <div class="menu-right">
-                <img class="cart-button" src="./images/icons/cart.png" alt="cart"/>
-                <h3 class="login-button">Login</h3>
+                <a href="./cart.html"><img class="cart-button" src="./images/icons/cart.png" alt="cart"/></a>
+                <h3 class="login-button"><a href="./Login-Signup.html">Login</a></h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="c-search-bar">
+                <img class="c-search-icon" src="./images/icons/search.png" alt="search icon"/>
+                <form action="/" class="c-search-box">
+                    <input class="input" type="text" placeholder="Search items here">
+                </form>
+                <div>
+                    <img class="c-search-helper-button" src="./images/icons/filter.png" alt="filter"/>
+                </div>
+                <div>
+                    <img class="c-search-helper-button" src="./images/icons/location.png" alt="location"/>
+                </div>
             </div>
         </div>
         <div class="category-bar">
@@ -155,7 +169,9 @@
                 <ul class="product-list">
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/chair.jpg" alt="chair"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/chair.jpg" alt="chair"/>
+                            </div>
                             <h3 class="product-name">
                                 Caprica Armchair in Grey Colour
                             </h3>
@@ -182,7 +198,9 @@
                     </li>
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/book-case.jpg" alt="book-case"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/book-case.jpg" alt="book-case"/>
+                            </div>
                             <h3 class="product-name">
                                 Ichika Two Door Glass Book Case
                             </h3>
@@ -209,7 +227,9 @@
                     </li>
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/oneplus.jpg" alt="one plus"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/oneplus.jpg" alt="one plus"/>
+                            </div>
                             <h3 class="product-name">
                                 OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)
                             </h3>
@@ -236,7 +256,9 @@
                     </li>
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/t-shirt.jpg" alt="t-shirt"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/t-shirt.jpg" alt="t-shirt"/>
+                            </div>
                             <h3 class="product-name">
                                 status mantra cotton half sleeves t-shirt for men
                             </h3>
@@ -273,7 +295,9 @@
                 <ul class="product-list">
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/shoes.jpg" alt="shoes"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/shoes.jpg" alt="shoes"/>
+                            </div>
                             <h3 class="product-name">
                                 Agasi Men's Air Wonder Series shoes for daily use
                             </h3>
@@ -300,7 +324,9 @@
                     </li>
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/watch.jpg" alt="watch"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/watch.jpg" alt="watch"/>
+                            </div>
                             <h3 class="product-name">
                                 TIMEWEAR Digital Men's Watch
                             </h3>
@@ -327,7 +353,9 @@
                     </li>
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/sticker.jpg" alt="sticker"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/sticker.jpg" alt="sticker"/>
+                            </div>
                             <h3 class="product-name">
                                 Solimo PVC Vinyl Wall Sticker for Living Room
                             </h3>
@@ -354,7 +382,9 @@
                     </li>
                     <li>
                         <span class="product">
-                            <img class="product-image" src="./images/products/samsung.jpg" alt="samsung"/>
+                            <div class="image-box">
+                                <img class="product-image" src="./images/products/samsung.jpg" alt="samsung"/>
+                            </div>
                             <h3 class="product-name">
                                 SAMSUNG Galaxy A71 (Prism Crush Black, 128 GB) (8 GB RAM)
                             </h3>
@@ -422,8 +452,6 @@
                 <li>
                     Order History
                 </li>
-            </ul>
-            <ul class="options-list">
                 <li>
                     Change password
                 </li>
@@ -432,7 +460,7 @@
                 </li>
             </ul>
             <div class="logo">
-                <h1>Bm</h1>
+                <h2>Bm</h2>
                 <h3>Blissmart</h3>
             </div>
         </div>

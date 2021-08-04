@@ -8,6 +8,10 @@ h2{
     font-size: 30px;
     margin: 0px 30px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 /* root component */
 .root{
     overflow-x: hidden;
@@ -74,6 +78,42 @@ input{
     margin: 0px 30px;
 }
 
+/* conditional search bar */
+.container{
+    display: none;
+    padding: 0px 0px 10px 0px;
+    width: 100vw;
+    justify-content: center;
+}
+.c-search-bar{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.c-search-icon{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+.c-search-box{
+    margin: 0px 10px 0px 0px;
+}
+.input{
+    padding: 0px 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+.c-search-helper-button{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px 0px 0px;
+}
+
 /* category styles */
 .category-bar{
     width: 100%;
@@ -84,7 +124,7 @@ input{
     display: inline-grid;
     grid-auto-flow: column;
     list-style: none;
-    padding: 5px 30px;
+    padding: 5px 5px;
     overflow: scroll;
     width: 100%;
 }
@@ -96,7 +136,7 @@ input{
     flex-direction: column;
     align-items: center;
     min-width: 70px;
-    margin: 0px 20px;
+    margin: 0px 10px;
     justify-content: space-between;
 }
 .ctrgy-img{
@@ -146,7 +186,7 @@ input{
     justify-content: space-between;
     width: 100vw;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 5vw;
 }
 .product-heading{
     font-size: 24px;
@@ -158,19 +198,30 @@ input{
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    padding: 0px 40px;
+    padding: 0px auto;
     height: fit-content;
 }
 .product{
-    width: 300px;
-    height: 350px;
+    width: 30vw;
+    height: auto;
     display: flex;
+    max-height: 350px;
     padding: 15px;
     flex-direction: column;
     margin: 0px 5px 30px 5px;
     justify-content: space-around;
+    min-width: 160px;
+    max-width: 250px;
     align-items: flex-start;
     box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.12);
+}
+.product > * {
+    margin: 2px 0px;
+}
+.image-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .product-image{
     height: 150px;
@@ -182,18 +233,17 @@ input{
 }
 .stars{
     display: flex;
-    list-style: none;
-    
+    list-style: none; 
 }
 .star{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 /* pager styles */
 .pager{
     width: 100%;
-    padding: 0px 20%;
+    padding: 0px 20vw;
     height: 80px;
     display: flex;
     justify-content: space-around;
@@ -225,22 +275,25 @@ input{
 
 /* footer */
 .footer{
-    width: 100%;
+    width: 100vw;
     background-color: #172337;
-    color: rgb(150, 93, 93);
+    color: white;
     display: flex;
-    padding: 0px 20%;
-    justify-content: space-around;
+    padding: 0px 5vw;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
 }
 .options-list{
     list-style: none;
     display: flex;
-    flex-direction: column;
-    height: 50%;
-    margin: 0px 20px;
+    flex-direction: row;
+    margin-right: 5vw;
     justify-content: space-around;
+}
+.options-list > li{
+    margin: 0px 20px;
+    font-size: 15px;
 }
 .logo{
     text-align: center;
@@ -248,4 +301,85 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+/* media queries */
+@media (max-width: 768px){
+    .star{
+        width: 20px;
+        height: 20px;
+    }
+    .desc{
+        font-size: 12px;
+    }
+    .footer{
+        padding: 20px 10vw;
+        height: fit-content;
+    }
+    .options-list{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .options-list > li{
+        margin: 2px 0px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+@media (min-width: 425px) and (max-width: 768px){
+    .container{
+        display: flex;
+    }
+    .c-search-bar{
+        width:400px;
+    }
+    .search-bar{
+        display: none;
+    }
+}
+@media (max-width: 425px){
+    .nav-icon-box{
+        width: 40px;
+        height: 30px;
+    }
+    .nav-icon{
+        width: 25px;
+        height: 25px;
+    }
+    h2{
+        font-size: 22px;
+        margin: 0px 5px;
+    }
+    .login-button{
+        margin: 0px 15px;
+    }
+    .container{
+        display: flex;
+    }
+    .c-search-bar{
+        width:90vw;
+    }
+    .search-bar{
+        display: none;
+    }
+    .arrows{
+        height: 150px;
+    }
+    .banner-image{
+        height: 150px;
+    }
+    .carousel{
+        height: 150px;
+    }
+    .arrow{
+        width: 50px;
+        height: 50px;
+    }
+    .product-heading{
+        font-size: 18px;
+    }
+    .product{
+        height: auto;
+    }
 }
